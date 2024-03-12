@@ -1,0 +1,780 @@
+:root{
+    --nextStepBlue: #1e2e3d;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all .5s linear;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    background-color: #eee;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+
+header{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fafafa;
+    position:fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+   
+}
+
+header .logo{
+    width: 20%;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   
+}
+
+
+header .logo img{
+    width: 25%;
+    height: 60px;
+    border-radius: 50%;
+}
+
+
+header .logo #menu-btn{
+    color: var(--nextStepBlue);
+    font-size: 30px;
+    display: none;
+}
+
+
+header .desktopNav{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+   
+
+}header .desktopNav #close-btn{
+    color: var(--nextStepBlue);
+    font-size: 30px;
+    display: none;
+
+}
+
+
+header .desktopNav .myNav{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+header .desktopNav .myNav li{
+        list-style: none;
+
+}
+
+header .desktopNav .myNav li a{
+    color: var(--nextStepBlue);
+    font-size: 17px;
+    text-decoration: none;
+    padding: 5px;
+    position: relative;
+
+}
+
+header .desktopNav .myNav li a::after{
+    content: "";
+    width: 0;
+    height: 3px;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    background-color: var(--nextStepBlue);
+    transition: all .3s;
+
+}
+
+header .desktopNav .myNav li a:hover::after{
+    width: 100%;
+}
+
+header .desktopNav .myNav li a.current{
+    color: white;
+    background-color: var(--nextStepBlue);
+}
+
+
+main{
+    height: 100%;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: row;
+    margin-top: 200px;
+    justify-content: space-around;
+}
+
+form{
+    background-color: #fafafa;
+    width: 550px;
+    height: 602px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 20px;
+    padding: 20px;
+}
+form h3{
+    margin-bottom: 20px;
+    color: var(--nextStepBlue);
+    
+}
+
+form p{
+    font-size: 17px;
+}
+
+form input{
+    width: 193px;
+    height: 40px;
+    font: 17px;
+    border: 1px grey s;
+   
+}
+
+form input::placeholder{
+    font-size: 17px;
+}
+
+form input:focus{
+    outline: 0;
+}
+form textarea:focus{
+    outline: 0;
+}
+
+form button{
+    width: 110px;
+    height: 70px;
+    background-color: #1e2e3d;
+    border-radius: 5px;
+    color: white;
+}
+
+section{
+    background-color: #fafafa;
+    width: 550px;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 10px;
+    padding: 20px;
+    align-items: center;
+    
+}
+
+.hotline{
+    
+    width: 350px;
+    height: 200px;
+    border-radius: 25px;
+    padding: 20px;
+    background-color: #1e2e3d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.email{
+  
+    width: 350px;
+    height: 200px;
+    border-radius: 25px;
+    padding: 20px;
+    background-color: #1e2e3d;
+    text-align: center;
+    
+    
+}
+
+section .map{    
+    width: 350px;
+    height: 250px;
+    border-radius: 25px;
+    padding: 20px;
+    background-color: #1e2e3d;
+   text-align: center;
+}
+
+section .hotline i{
+    
+    height: 90px;
+    width: 90px;
+    padding: 18px;
+    border-radius: 100px;
+    font: red;
+    font-size: 50px;
+    background-color: white;
+    
+}
+
+section .email i{
+    height: 90px;
+    width: 90px;
+    padding: 18px;
+    border-radius: 100px;
+    font: red;
+    font-size: 50px;
+    background-color: white;
+    
+}
+
+section  .map .location i{
+    height: 90px;
+    width: 76px;
+    padding: 18px;
+    border-radius: 80px;
+    font-size: 50px;
+    background-color: white;
+
+}
+
+section  .map a i{
+    height: 31px;
+    width: 31px;
+    background-color: white;
+    border-radius: 100px;
+    padding: 3px;
+    font-size: 25px;
+    color: var(--nextStepBlue);
+    
+}
+
+section a{
+    
+    text-decoration: none;
+    color: white;
+}
+
+section p{
+    font-size: 17px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+section h3{
+    color: white;
+}
+
+p iframe{
+    margin-top: 50px;
+}
+
+
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 400px;
+    background-color: var(--nextStepBlue);
+    color: white;
+    font-size: 17px;
+    margin-top: 150px;
+}
+
+footer img{
+    width: 100px;
+    height: 90px;
+    border-radius: 10px;
+}
+
+footer .who-we-are{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 25%;
+    gap: 30%;
+    margin-top: 50px;
+}
+
+footer .quick-links{
+    display: flex;
+    flex-direction: column;
+    height: 70%;
+    width: 25%;
+    gap: 20px;
+    list-style: none;
+}
+
+footer .quick-links h3{
+    color: var(--nextStepBlue);
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: 40px;
+    width: 50%;
+    padding-left: 5px;
+}
+
+footer .quick-links li a{
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+
+}
+
+footer .quick-links li a:hover{
+    color: var(--kathyBlue);
+    background-color: white;
+    width: 25%;
+    padding: 3px;
+    border-radius: 5px;
+
+}
+
+footer .contact{
+    width: 25%;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    margin-top: 50px;
+}
+
+
+footer .contact .cont{
+    display: flex;
+    flex-direction: column;
+    height: 60px;
+    
+}
+
+
+
+footer .contact .cont span{
+    display: flex;
+   
+    flex-direction: column;
+
+}
+
+footer .contact .cont span .mymail{
+    text-transform: none;
+}
+
+@media (max-width: 500px){
+    
+    header{
+        width: 100%;
+        height: 100px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #fafafa;
+        position:fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+             
+    }
+    
+    header .logo{
+        width: 100%;
+        height: 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: none;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    
+    
+    header .logo img{
+        width: 20%;
+        height: 60px;
+        border-radius: 50%;
+    }
+    
+    
+    header .logo #menu-btn{
+        color: var(--nextStepBlue);
+        font-size: 30px;
+        display: flex;
+        cursor: pointer;
+    }
+    
+    
+    header .desktopNav{
+        width: 60%;
+        height: 60vh;
+        display: none;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+      
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #fafafa;
+    
+    }
+    
+    header .desktopNav #close-btn{
+        color: var(--nextStepBlue);
+        font-size: 30px;
+        display: flex;
+        position: absolute;
+        left: 45vw;
+        top: 20px;
+    
+    }
+    
+    
+    header .desktopNav .myNav{
+        width: 100%;
+        height: 95%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        gap: 30px;
+        
+        
+    }
+    
+    header .desktopNav .myNav li{
+            list-style: none;
+    
+    }
+    
+    header .desktopNav .myNav li a{
+        color: var(--nextStepBlue);
+        font-size: 17px;
+        text-decoration: none;
+        padding: 5px;
+        position: relative;
+    
+    }
+    
+    header .desktopNav .myNav li a::after{
+        content: "";
+        width: 0;
+        height: 3px;
+        position: absolute;
+        bottom: -10px;
+        left: 0;
+        background-color: var(--nextStepBlue);
+        transition: all .3s;
+    
+    }
+    
+    header .desktopNav .myNav li a:hover::after{
+        width: 100%;
+    }
+
+
+    main{
+        height: 100%;
+        display: flex;
+        height: 100%;
+        width: 100%;
+        flex-direction: column;
+        margin-top: 200px;
+        align-items: center;
+        justify-content: space-between;
+        gap: 80px;
+    }
+    
+    form{
+        background-color: #fafafa;
+        width: 400px;
+        height: 602px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        border-radius: 20px;
+        padding: 20px;
+    }
+    form h3{
+        margin-bottom: 20px;
+        color: var(--nextStepBlue);
+        
+    }
+    
+    form p{
+        font-size: 17px;
+    }
+    
+    form input{
+        width: 193px;
+        height: 40px;
+        font: 17px;
+        border: 1px grey s;
+       
+    }
+    
+    form input::placeholder{
+        font-size: 17px;
+    }
+    
+    form input:focus{
+        outline: 0;
+    }
+    form textarea:focus{
+        outline: 0;
+    }
+    
+    form button{
+        width: 110px;
+        height: 70px;
+        background-color: #1e2e3d;
+        border-radius: 5px;
+        color: white;
+    }
+    
+    section{
+        background-color: #fafafa;
+        width: 400px;
+        height: 800px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        border-radius: 10px;
+        padding: 20px;
+        align-items: center;
+        
+    }
+    
+    .hotline{
+        
+        width: 350px;
+        height: 200px;
+        border-radius: 25px;
+        padding: 20px;
+        background-color: #1e2e3d;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .email{
+      
+        width: 350px;
+        height: 200px;
+        border-radius: 25px;
+        padding: 20px;
+        background-color: #1e2e3d;
+        text-align: center;
+        
+        
+    }
+    
+    section .map{    
+        width: 350px;
+        height: 250px;
+        border-radius: 25px;
+        padding: 20px;
+        background-color: #1e2e3d;
+       text-align: center;
+    }
+    
+    section .hotline i{
+        
+        height: 90px;
+        width: 90px;
+        padding: 18px;
+        border-radius: 100px;
+        font: red;
+        font-size: 50px;
+        background-color: white;
+        
+    }
+    
+    section .email i{
+        height: 90px;
+        width: 90px;
+        padding: 18px;
+        border-radius: 100px;
+        font: red;
+        font-size: 50px;
+        background-color: white;
+        
+    }
+    
+    section  .map .location i{
+        height: 90px;
+        width: 76px;
+        padding: 18px;
+        border-radius: 80px;
+        font-size: 50px;
+        background-color: white;
+    
+    }
+    
+    section  .map a i{
+        height: 31px;
+        width: 31px;
+        background-color: white;
+        border-radius: 100px;
+        padding: 3px;
+        font-size: 25px;
+        color: var(--nextStepBlue);
+        
+    }
+    
+    section a{
+        
+        text-decoration: none;
+        color: white;
+    }
+    
+    section p{
+        font-size: 17px;
+        color: white;
+        display: flex;
+        align-items: center;
+    }
+    
+    section h3{
+        color: white;
+    }
+    
+    p iframe{
+        width: 400px;
+        
+        margin-top: 50px;
+    }
+    
+
+    
+    footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 100vw;
+        height: 100%;
+        background-color: var(--nextStepBlue);
+        color: white;
+        font-size: 15px;
+        margin-top: 150px;
+        gap: 30px;
+
+    }
+    
+    footer img{
+        width: 15%;
+        height: 50px;
+        border-radius: 10px;
+    }
+    
+    footer .who-we-are{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 90%;
+        gap: 30px;
+        margin-top: 50px;
+        padding-left: 20px;
+    }
+    
+    footer .quick-links{
+        display: flex;
+        flex-direction: column;
+        height: 70%;
+        width: 90%;
+        gap: 20px;
+        list-style: none;      
+        padding-left: 20px;
+    }
+    
+    footer .quick-links h3{
+        color: var(--nextStepBlue);
+        background-color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        height: 40px;
+        width: 50%;
+        padding-left: 5px;
+    }
+    
+    footer .quick-links li a{
+        color: white;
+        text-decoration: none;
+        font-size: 17px;
+    
+    }
+    
+    footer .quick-links li a:hover{
+        color: var(--kathyBlue);
+        background-color: white;
+        width: 25%;
+        padding: 3px;
+        border-radius: 5px;
+    
+    }
+    
+    footer .contact{
+        width: 90%;
+        height: 100px;
+        gap: 20px;
+        display: flex;
+        flex-direction: column;
+        height: 400px;
+        margin-top: 50px;
+        
+    }
+    
+    
+    footer .contact .cont{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        align-items: center;
+        height: 60px;
+        
+    }
+    
+    footer .contact .cont span{
+        display: flex;
+        flex-direction: column;
+    
+    }
+    
+    footer .contact .cont span .mymail{
+        text-transform: none;
+    }
+}

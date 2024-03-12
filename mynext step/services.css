@@ -1,0 +1,551 @@
+:root{
+    --nextStepBlue: #1e2e3d;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all .5s linear;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    background-color: #eee;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+
+header{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fafafa;
+    position:fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+   
+}
+
+header .logo{
+    width: 20%;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   
+}
+
+header .logo img{
+    width: 25%;
+    height: 60px;
+    border-radius: 50%;
+}
+
+
+header .logo #menu-btn{
+    color: var(--nextStepBlue);
+    font-size: 30px;
+    display: none;
+}
+
+
+header .desktopNav{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+   
+
+}header .desktopNav #close-btn{
+    color: var(--nextStepBlue);
+    font-size: 30px;
+    display: none;
+
+}
+
+
+header .desktopNav .myNav{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+header .desktopNav .myNav li{
+        list-style: none;
+
+}
+
+header .desktopNav .myNav li a{
+    color: var(--nextStepBlue);
+    font-size: 17px;
+    text-decoration: none;
+    padding: 5px;
+    position: relative;
+
+}
+
+header .desktopNav .myNav li a::after{
+    content: "";
+    width: 0;
+    height: 3px;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    background-color: var(--nextStepBlue);
+    transition: all .3s;
+
+}
+
+header .desktopNav .myNav li a:hover::after{
+    width: 100%;
+}
+
+header .desktopNav .myNav li a.current{
+    color: white;
+    background-color: var(--nextStepBlue);
+}
+
+.What{
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-around;
+    margin-top: 150px;
+}
+img{
+    width: 450px;
+    height: 300px;
+    border-radius: 7px;
+    margin-left: 100px;
+
+}
+
+.tail h3{
+   margin-top: 80px;
+    margin-left: 300px;
+    font-weight: bold;
+    color: var(--nextStepBlue)
+
+}
+
+.lorem{
+    margin-left: 80px;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-right: 80px;
+}
+
+.text{
+    text-decoration: underline 5px; 
+    color: var(--nextStepBlue); 
+    display: flex; 
+    margin-left: 10px;
+}
+
+.first{
+    margin-top: 80px;
+   display: flex;
+   flex-direction: row;
+   
+}
+.second{
+    margin-top: 80px;
+   display: flex;
+   flex-direction: row;
+}
+
+.third{
+    margin-top: 80px;
+   display: flex;
+   flex-direction: row;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 400px;
+    background-color: var(--nextStepBlue);
+    color: white;
+    font-size: 17px;
+    margin-top: 150px;
+}
+
+footer img{
+    width: 100px;
+    height: 90px;
+    border-radius: 10px;
+}
+
+footer .who-we-are{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 25%;
+    gap: 30%;
+    margin-top: 50px;
+}
+
+footer .quick-links{
+    display: flex;
+    flex-direction: column;
+    height: 70%;
+    width: 25%;
+    gap: 20px;
+    list-style: none;
+}
+
+footer .quick-links h3{
+    color: var(--nextStepBlue);
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: 40px;
+    width: 50%;
+    padding-left: 5px;
+}
+
+footer .quick-links li a{
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+
+}
+
+footer .quick-links li a:hover{
+    color: var(--kathyBlue);
+    background-color: white;
+    width: 25%;
+    padding: 3px;
+    border-radius: 5px;
+
+}
+
+footer .contact{
+    width: 25%;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    margin-top: 50px;
+}
+
+
+footer .contact .cont{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    height: 60px;
+    
+}
+
+footer .contact .cont span{
+    display: flex;
+    flex-direction: column;
+
+}
+
+footer .contact .cont span .mymail{
+    text-transform: none;
+}
+
+
+@media (max-width: 500px){
+    
+    header{
+        width: 100%;
+        height: 100px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #fafafa;
+        position:fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+             
+    }
+    
+    header .logo{
+        width: 100%;
+        height: 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: none;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    
+    
+    header .logo img{
+        width: 20%;
+        height: 60px;
+        border-radius: 50%;
+    }
+    
+    
+    header .logo #menu-btn{
+        color: var(--nextStepBlue);
+        font-size: 30px;
+        display: flex;
+        cursor: pointer;
+    }
+    
+    
+    header .desktopNav{
+        width: 60%;
+        height: 60vh;
+        display: none;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+      
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #fafafa;
+    
+    }
+    
+    header .desktopNav #close-btn{
+        color: var(--nextStepBlue);
+        font-size: 30px;
+        display: flex;
+        position: absolute;
+        left: 45vw;
+        top: 20px;
+    
+    }
+    
+    
+    header .desktopNav .myNav{
+        width: 100%;
+        height: 95%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        gap: 30px;
+        
+        
+    }
+    
+    header .desktopNav .myNav li{
+            list-style: none;
+    
+    }
+    
+    header .desktopNav .myNav li a{
+        color: var(--nextStepBlue);
+        font-size: 17px;
+        text-decoration: none;
+        padding: 5px;
+        position: relative;
+    
+    }
+    
+    header .desktopNav .myNav li a::after{
+        content: "";
+        width: 0;
+        height: 3px;
+        position: absolute;
+        bottom: -10px;
+        left: 0;
+        background-color: var(--nextStepBlue);
+        transition: all .3s;
+    
+    }
+    
+    header .desktopNav .myNav li a:hover::after{
+        width: 100%;
+    }
+    
+    
+    .What{
+        font-size: 18px;
+        display: flex; 
+        flex-direction: row; 
+        justify-content: space-around;
+        margin-top: 150px;
+        align-items: center;
+        text-align: center;
+    }
+    .mobile{
+        position: relative;
+        
+
+    }
+
+   .mobile img{
+        width: 350px;
+        height: 250px;
+        border-radius: 7px;
+        margin-right: 100px;
+    }
+    
+    .tail h3{
+        font-size: 18px;
+        font-weight: bold;
+        color: var(--nextStepBlue);
+        position: relative;
+        right: 110px;
+        bottom: 50px;
+    
+    }
+
+    
+    .lorem{ 
+        font-size: 15px;
+        position: relative;
+        bottom: 70px;
+        left: 8px;
+    }
+    
+    .text{
+        text-decoration: underline 5px; 
+        color: var(--nextStepBlue); 
+        display: flex; 
+        
+        
+    }
+    
+    
+
+    .first{
+       display: flex;
+       flex-direction: column;
+       
+    }
+    .second{
+       display: flex;
+       flex-direction: column;
+    }
+    
+    .third{
+       display: flex;
+       flex-direction: column;
+    }
+
+    
+    footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 100vw;
+        height: 100%;
+        background-color: var(--nextStepBlue);
+        color: white;
+        font-size: 15px;
+        gap: 30px;
+
+    }
+    
+    footer img{
+        width: 15%;
+        height: 50px;
+        border-radius: 10px;
+    }
+    
+    footer .who-we-are{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 90%;
+        gap: 30px;
+        margin-top: 50px;
+        
+    }
+    
+    footer .quick-links{
+        display: flex;
+        flex-direction: column;
+        height: 70%;
+        width: 90%;
+        gap: 20px;
+        list-style: none;      
+        padding-left: 20px;
+    }
+    
+    footer .quick-links h3{
+        color: var(--nextStepBlue);
+        background-color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        height: 40px;
+        width: 50%;
+        padding-left: 5px;
+    }
+    
+    footer .quick-links li a{
+        color: white;
+        text-decoration: none;
+        font-size: 17px;
+    
+    }
+    
+    footer .quick-links li a:hover{
+        color: var(--kathyBlue);
+        background-color: white;
+        width: 25%;
+        padding: 3px;
+        border-radius: 5px;
+    
+    }
+    
+    footer .contact{
+        width: 90%;
+        height: 100px;
+        gap: 20px;
+        display: flex;
+        flex-direction: column;
+        height: 400px;
+        margin-top: 50px;
+        
+    }
+    
+    
+    footer .contact .cont{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        align-items: center;
+        height: 60px;
+        
+    }
+    
+    footer .contact .cont span{
+        display: flex;
+        flex-direction: column;
+    
+    }
+    
+    footer .contact .cont span .mymail{
+        text-transform: none;
+    }
+}
